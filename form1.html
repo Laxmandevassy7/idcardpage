@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Add Record Form</title>
+</head>
+<body style="background-color:silver";>
+<h1 align="middle">ENTER YOUR DETAILS</h1>
+
+<form align="left" action="insert.php">
+First name:<input type="text" name="first_name"><br>
+<br>
+FATHER'S NAME/GUARDIAN'S NAME:<input name="fname" type="text"><br>
+<br>
+<p id="bbb"></p>
+REG NO:<input type="text" name="iid"><br>
+<br>
+DATE OF BIRTH:<input name="dob" type="text"><br>
+<br>
+ <strong>TYPE:</strong>
+ DAYSCHOLAR<input name="schooling" type="radio" value="Dayscholar" id="day"  onclick="show()">
+HOSTELLER<input name="schooling" type="radio" value="Hosteller" id="day" >
+PRIVATE<input name="schooling" type="radio" value="Private" id="day"  ><br>
+<br>
+<div id="textbox" style="display: none">
+<strong>IF DAY SCHOLAR:</strong>
+BOARDING POINT:<input name="boardingpt" type="text" >
+BUS NO:<input name="bus" type="number" ><br>
+</div>
+<script>
+function show()
+{
+		var y = document.getElementById("textbox").style.display='block';
+		}
+</script>
+<br>
+<table>
+<tr>COMMUNICATION ADDRESS:</tr><td><textarea name="address" rows="4" cols="36"align="center">enter text here...</textarea></td></table><br>
+<br>
+
+AADHAR CARD NO:<input name="aadhar" type="number">
+<br><br>
+
+
+    <input type="submit" value="Submit">
+
+</form>
+
+
+</body>
+</html>
